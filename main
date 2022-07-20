@@ -1,0 +1,868 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local TheGUI = Instance.new("ScreenGui")
+local Key = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Login = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Password = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Username = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local Successful = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local Loading = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Panel = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local OpenMenu = Instance.new("TextButton")
+local CurrentMenu = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local MainFrame = Instance.new("Frame")
+local Menus = Instance.new("ScrollingFrame")
+local Main = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Teleports = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Credits = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Main2 = Instance.new("ScrollingFrame")
+local Misc_2 = Instance.new("ScrollingFrame")
+local EquipSword = Instance.new("Folder")
+local ClickForSword = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local SpectatePlr = Instance.new("Folder")
+local PlrName = Instance.new("TextBox")
+local SpectatePlayer = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local StopSpectate = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
+local Teleports_2 = Instance.new("ScrollingFrame")
+local TpToPlr = Instance.new("Folder")
+local PlrName_2 = Instance.new("TextBox")
+local TpToPlayer = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local BringPlr = Instance.new("Folder")
+local PlrName_3 = Instance.new("TextBox")
+local BringPlayer = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local KickPlr = Instance.new("Folder")
+local KickPlayer = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local PlrName_4 = Instance.new("TextBox")
+local Credits_2 = Instance.new("ScrollingFrame")
+local TextLabel_4 = Instance.new("TextLabel")
+local OpenAnim = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Transition = Instance.new("Frame")
+local Transition2 = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local Transition3 = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Dialog = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local Next = Instance.new("TextButton")
+local Continue = Instance.new("TextButton")
+
+--Properties:
+
+TheGUI.Name = "TheGUI"
+TheGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TheGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TheGUI.ResetOnSpawn = false
+
+Key.Name = "Key"
+Key.Parent = TheGUI
+Key.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Key.Position = UDim2.new(0.400437653, 0, 0.300518066, 0)
+Key.Size = UDim2.new(0, 325, 0, 325)
+Key.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = Key
+
+UICorner_2.CornerRadius = UDim.new(0, 16)
+UICorner_2.Parent = UICorner
+
+Login.Name = "Login"
+Login.Parent = Key
+Login.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Login.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Login.Position = UDim2.new(0.221436262, 0, 0.716923058, 0)
+Login.Size = UDim2.new(0, 180, 0, 45)
+Login.Font = Enum.Font.GothamMedium
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(255, 255, 255)
+Login.TextSize = 24.000
+Login.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 12)
+UICorner_3.Parent = Login
+
+TextLabel.Parent = Key
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.121816635, 0, 0.0553846136, 0)
+TextLabel.Size = UDim2.new(0, 244, 0, 77)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Get Key By Contacting Owner/Admin Hxx#7222"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = Key
+Password.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Password.Position = UDim2.new(0.190689743, 0, 0.504615426, 0)
+Password.Size = UDim2.new(0, 200, 0, 50)
+Password.Font = Enum.Font.GothamMedium
+Password.Text = "Password"
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextSize = 24.000
+
+UICorner_4.CornerRadius = UDim.new(0, 12)
+UICorner_4.Parent = Password
+
+Username.Name = "Username"
+Username.Parent = Key
+Username.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Username.Position = UDim2.new(0.191302866, 0, 0.320000023, 0)
+Username.Size = UDim2.new(0, 200, 0, 50)
+Username.Font = Enum.Font.GothamMedium
+Username.Text = "Username"
+Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+Username.TextSize = 24.000
+
+UICorner_5.CornerRadius = UDim.new(0, 12)
+UICorner_5.Parent = Username
+
+Successful.Name = "Successful"
+Successful.Parent = TheGUI
+Successful.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Successful.Position = UDim2.new(0.401167035, 0, 0.37613368, 0)
+Successful.Size = UDim2.new(0, 271, 0, 200)
+Successful.Visible = false
+
+UICorner_6.CornerRadius = UDim.new(0, 16)
+UICorner_6.Parent = Successful
+
+TextLabel_2.Parent = Successful
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.070110701, 0, 0.0719230622, 0)
+TextLabel_2.Size = UDim2.new(0, 233, 0, 170)
+TextLabel_2.Font = Enum.Font.GothamMedium
+TextLabel_2.Text = "Successfully Logged In!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Loading.Name = "Loading"
+Loading.Parent = TheGUI
+Loading.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Loading.Position = UDim2.new(0.401167035, 0, 0.37613368, 0)
+Loading.Size = UDim2.new(0, 271, 0, 200)
+Loading.Visible = false
+
+UICorner_7.CornerRadius = UDim.new(0, 16)
+UICorner_7.Parent = Loading
+
+TextLabel_3.Parent = Loading
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.070110701, 0, 0.0719230622, 0)
+TextLabel_3.Size = UDim2.new(0, 233, 0, 170)
+TextLabel_3.Font = Enum.Font.GothamMedium
+TextLabel_3.Text = "Loading"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Panel.Name = "Panel"
+Panel.Parent = TheGUI
+Panel.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Panel.Position = UDim2.new(0.327498168, 0, 0.242611498, 0)
+Panel.Size = UDim2.new(0, 473, 0, 33)
+Panel.Visible = false
+
+UICorner_8.CornerRadius = UDim.new(0, 6)
+UICorner_8.Parent = Panel
+
+OpenMenu.Name = "OpenMenu"
+OpenMenu.Parent = Panel
+OpenMenu.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+OpenMenu.Position = UDim2.new(0.937838078, 0, 0.0166666675, 0)
+OpenMenu.Size = UDim2.new(0, 18, 0, 18)
+OpenMenu.Font = Enum.Font.SourceSans
+OpenMenu.Text = ""
+OpenMenu.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenMenu.TextSize = 14.000
+
+CurrentMenu.Name = "CurrentMenu"
+CurrentMenu.Parent = Panel
+CurrentMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CurrentMenu.BackgroundTransparency = 1.000
+CurrentMenu.Position = UDim2.new(0, 0, -0.00277756201, 0)
+CurrentMenu.Size = UDim2.new(0, 145, 0, 24)
+CurrentMenu.Font = Enum.Font.GothamMedium
+CurrentMenu.Text = "Main"
+CurrentMenu.TextColor3 = Color3.fromRGB(255, 255, 255)
+CurrentMenu.TextSize = 24.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(0.36, Color3.fromRGB(170, 85, 255)), ColorSequenceKeypoint.new(0.79, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 85, 0))}
+UIGradient.Parent = CurrentMenu
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Panel
+MainFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.00100000005, 0, 0.698000014, 0)
+MainFrame.Size = UDim2.new(0, 473, 0, 369)
+
+Menus.Name = "Menus"
+Menus.Parent = MainFrame
+Menus.Active = true
+Menus.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Menus.BorderSizePixel = 0
+Menus.Position = UDim2.new(0, 0, 0.088888891, 0)
+Menus.Size = UDim2.new(0, 100, 0, 311)
+Menus.CanvasSize = UDim2.new(0, 0, 1, 0)
+
+Main.Name = "Main"
+Main.Parent = Menus
+Main.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main.Position = UDim2.new(0.0700000077, 0, 0.0380768627, 0)
+Main.Size = UDim2.new(0, 73, 0, 28)
+Main.Font = Enum.Font.GothamMedium
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 14.000
+
+UICorner_9.Parent = Main
+
+Misc.Name = "Misc"
+Misc.Parent = Menus
+Misc.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Misc.Position = UDim2.new(0.0700000077, 0, 0.135299087, 0)
+Misc.Size = UDim2.new(0, 73, 0, 28)
+Misc.Font = Enum.Font.GothamMedium
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextSize = 14.000
+
+UICorner_10.Parent = Misc
+
+Teleports.Name = "Teleports"
+Teleports.Parent = Menus
+Teleports.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Teleports.Position = UDim2.new(0.0644608885, 0, 0.233198822, 0)
+Teleports.Size = UDim2.new(0, 73, 0, 28)
+Teleports.Font = Enum.Font.GothamMedium
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextSize = 14.000
+
+UICorner_11.Parent = Teleports
+
+Credits.Name = "Credits"
+Credits.Parent = Menus
+Credits.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Credits.Position = UDim2.new(0.0644608885, 0, 0.330759764, 0)
+Credits.Size = UDim2.new(0, 73, 0, 28)
+Credits.Font = Enum.Font.GothamMedium
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 14.000
+
+UICorner_12.Parent = Credits
+
+Main2.Name = "Main2"
+Main2.Parent = MainFrame
+Main2.Active = true
+Main2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Main2.Position = UDim2.new(0.250999987, 0, 0.0890000015, 0)
+Main2.Size = UDim2.new(0, 343, 0, 311)
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = MainFrame
+Misc_2.Active = true
+Misc_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Misc_2.Position = UDim2.new(0.250734478, 0, 0.088888891, 0)
+Misc_2.Size = UDim2.new(0, 343, 0, 311)
+Misc_2.Visible = false
+
+EquipSword.Name = "EquipSword"
+EquipSword.Parent = Misc_2
+
+ClickForSword.Name = "Click For Sword"
+ClickForSword.Parent = EquipSword
+ClickForSword.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ClickForSword.Position = UDim2.new(0.0262390673, 0, 0.0181380212, 0)
+ClickForSword.Size = UDim2.new(0, 315, 0, 50)
+ClickForSword.Font = Enum.Font.GothamMedium
+ClickForSword.Text = "Sword!"
+ClickForSword.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClickForSword.TextSize = 14.000
+
+UICorner_13.CornerRadius = UDim.new(0, 12)
+UICorner_13.Parent = ClickForSword
+
+SpectatePlr.Name = "SpectatePlr"
+SpectatePlr.Parent = Misc_2
+
+PlrName.Name = "PlrName"
+PlrName.Parent = SpectatePlr
+PlrName.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+PlrName.BackgroundTransparency = 0.550
+PlrName.Position = UDim2.new(0.752032042, 0, 0.121270999, 0)
+PlrName.Size = UDim2.new(0, 66, 0, 25)
+PlrName.Font = Enum.Font.SourceSans
+PlrName.Text = "PlrName"
+PlrName.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName.TextScaled = true
+PlrName.TextSize = 14.000
+PlrName.TextWrapped = true
+
+SpectatePlayer.Name = "SpectatePlayer"
+SpectatePlayer.Parent = SpectatePlr
+SpectatePlayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SpectatePlayer.Position = UDim2.new(0.0291545186, 0, 0.105197698, 0)
+SpectatePlayer.Size = UDim2.new(0, 191, 0, 50)
+SpectatePlayer.Font = Enum.Font.GothamMedium
+SpectatePlayer.Text = "Spectate Player"
+SpectatePlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpectatePlayer.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(0, 12)
+UICorner_14.Parent = SpectatePlayer
+
+StopSpectate.Name = "StopSpectate"
+StopSpectate.Parent = SpectatePlr
+StopSpectate.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+StopSpectate.Position = UDim2.new(0.60641402, 0, 0.120039329, 0)
+StopSpectate.Size = UDim2.new(0, 45, 0, 25)
+StopSpectate.Font = Enum.Font.GothamMedium
+StopSpectate.Text = "Stop"
+StopSpectate.TextColor3 = Color3.fromRGB(255, 255, 255)
+StopSpectate.TextSize = 14.000
+
+UICorner_15.CornerRadius = UDim.new(0, 12)
+UICorner_15.Parent = StopSpectate
+
+UICorner_16.Parent = MainFrame
+
+Teleports_2.Name = "Teleports"
+Teleports_2.Parent = MainFrame
+Teleports_2.Active = true
+Teleports_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Teleports_2.Position = UDim2.new(0.250734478, 0, 0.088888891, 0)
+Teleports_2.Size = UDim2.new(0, 343, 0, 311)
+Teleports_2.Visible = false
+
+TpToPlr.Name = "TpToPlr"
+TpToPlr.Parent = Teleports_2
+
+PlrName_2.Name = "PlrName"
+PlrName_2.Parent = TpToPlr
+PlrName_2.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+PlrName_2.BackgroundTransparency = 0.550
+PlrName_2.Position = UDim2.new(0.754947484, 0, 0.0372601599, 0)
+PlrName_2.Size = UDim2.new(0, 66, 0, 25)
+PlrName_2.Font = Enum.Font.SourceSans
+PlrName_2.Text = "PlrName"
+PlrName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName_2.TextScaled = true
+PlrName_2.TextSize = 14.000
+PlrName_2.TextWrapped = true
+
+TpToPlayer.Name = "Tp To Player"
+TpToPlayer.Parent = TpToPlr
+TpToPlayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TpToPlayer.Position = UDim2.new(0.0291545186, 0, 0.0207052641, 0)
+TpToPlayer.Size = UDim2.new(0, 240, 0, 50)
+TpToPlayer.Font = Enum.Font.GothamMedium
+TpToPlayer.Text = "Teleport To Player"
+TpToPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+TpToPlayer.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0, 12)
+UICorner_17.Parent = TpToPlayer
+
+BringPlr.Name = "BringPlr"
+BringPlr.Parent = Teleports_2
+
+PlrName_3.Name = "PlrName"
+PlrName_3.Parent = BringPlr
+PlrName_3.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+PlrName_3.BackgroundTransparency = 0.550
+PlrName_3.Position = UDim2.new(0.752032042, 0, 0.121270999, 0)
+PlrName_3.Size = UDim2.new(0, 66, 0, 25)
+PlrName_3.Font = Enum.Font.SourceSans
+PlrName_3.Text = "PlrName"
+PlrName_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName_3.TextScaled = true
+PlrName_3.TextSize = 14.000
+PlrName_3.TextWrapped = true
+
+BringPlayer.Name = "BringPlayer"
+BringPlayer.Parent = BringPlr
+BringPlayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+BringPlayer.Position = UDim2.new(0.0262390673, 0, 0.104716107, 0)
+BringPlayer.Size = UDim2.new(0, 240, 0, 50)
+BringPlayer.Font = Enum.Font.GothamMedium
+BringPlayer.Text = "Bring Player"
+BringPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+BringPlayer.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 12)
+UICorner_18.Parent = BringPlayer
+
+KickPlr.Name = "KickPlr"
+KickPlr.Parent = Teleports_2
+
+KickPlayer.Name = "KickPlayer"
+KickPlayer.Parent = KickPlr
+KickPlayer.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KickPlayer.Position = UDim2.new(0.0262390673, 0, 0.191436976, 0)
+KickPlayer.Size = UDim2.new(0, 240, 0, 50)
+KickPlayer.Font = Enum.Font.GothamMedium
+KickPlayer.Text = "Kick Player"
+KickPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+KickPlayer.TextSize = 14.000
+
+UICorner_19.CornerRadius = UDim.new(0, 12)
+UICorner_19.Parent = KickPlayer
+
+PlrName_4.Name = "PlrName"
+PlrName_4.Parent = KickPlr
+PlrName_4.BackgroundColor3 = Color3.fromRGB(120, 120, 120)
+PlrName_4.BackgroundTransparency = 0.550
+PlrName_4.Position = UDim2.new(0.752032042, 0, 0.207991868, 0)
+PlrName_4.Size = UDim2.new(0, 66, 0, 25)
+PlrName_4.Font = Enum.Font.SourceSans
+PlrName_4.Text = "PlrName"
+PlrName_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlrName_4.TextScaled = true
+PlrName_4.TextSize = 14.000
+PlrName_4.TextWrapped = true
+
+Credits_2.Name = "Credits"
+Credits_2.Parent = MainFrame
+Credits_2.Active = true
+Credits_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Credits_2.Position = UDim2.new(0.250999987, 0, 0.0890000015, 0)
+Credits_2.Size = UDim2.new(0, 343, 0, 311)
+Credits_2.Visible = false
+
+TextLabel_4.Parent = Credits_2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.206997082, 0, 0.0189701896, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.GothamMedium
+TextLabel_4.Text = "Developed By Annoyingdisturbe"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+
+OpenAnim.Name = "OpenAnim"
+OpenAnim.Parent = TheGUI
+OpenAnim.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+OpenAnim.Position = UDim2.new(0.400999993, 0, 0.300999999, 0)
+OpenAnim.Visible = false
+
+UICorner_20.CornerRadius = UDim.new(0, 16)
+UICorner_20.Parent = OpenAnim
+
+Transition.Name = "Transition"
+Transition.Parent = TheGUI
+Transition.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+Transition.Position = UDim2.new(1.20000005, 0, 0, 0)
+Transition.Size = UDim2.new(2, 500, 2, 500)
+
+Transition2.Name = "Transition2"
+Transition2.Parent = TheGUI
+Transition2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Transition2.Position = UDim2.new(0.401167035, 0, 0.375764996, 0)
+Transition2.Visible = false
+
+UICorner_21.CornerRadius = UDim.new(0, 16)
+UICorner_21.Parent = Transition2
+
+Transition3.Name = "Transition3"
+Transition3.Parent = TheGUI
+Transition3.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Transition3.Position = UDim2.new(0.327331126, 0, 0.242350042, 0)
+Transition3.Visible = false
+
+UICorner_22.CornerRadius = UDim.new(0, 16)
+UICorner_22.Parent = Transition3
+
+Dialog.Name = "Dialog"
+Dialog.Parent = TheGUI
+Dialog.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+Dialog.BackgroundTransparency = 0.100
+Dialog.Position = UDim2.new(0.0640621111, 0, 0.630354941, 0)
+Dialog.Size = UDim2.new(0, 1125, 0, 272)
+Dialog.Visible = false
+
+UICorner_23.CornerRadius = UDim.new(0, 16)
+UICorner_23.Parent = Dialog
+
+TextLabel_5.Parent = Dialog
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.00711111119, 0, 0.0294117648, 0)
+TextLabel_5.Size = UDim2.new(0, 1072, 0, 252)
+TextLabel_5.Font = Enum.Font.GothamMedium
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 22.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
+
+Next.Name = "Next"
+Next.Parent = Dialog
+Next.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Next.BackgroundTransparency = 1.000
+Next.Position = UDim2.new(0.950887501, 0, 0.812922955, 0)
+Next.Size = UDim2.new(0, 55, 0, 50)
+Next.Visible = false
+Next.Font = Enum.Font.GothamMedium
+Next.Text = ">"
+Next.TextColor3 = Color3.fromRGB(255, 255, 255)
+Next.TextSize = 32.000
+
+Continue.Name = "Continue"
+Continue.Parent = Dialog
+Continue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Continue.BackgroundTransparency = 1.000
+Continue.Position = UDim2.new(0.950887501, 0, 0.812922955, 0)
+Continue.Size = UDim2.new(0, 55, 0, 50)
+Continue.Visible = false
+Continue.Font = Enum.Font.GothamMedium
+Continue.Text = ">"
+Continue.TextColor3 = Color3.fromRGB(255, 255, 255)
+Continue.TextSize = 32.000
+
+-- Scripts:
+
+local function NLVGGL_fake_script() -- Login.Script 
+	local script = Instance.new('Script', Login)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.Password.Text == "Slayers" and script.Parent.Parent.Username.Text == "Project" then
+			script.Parent.Parent.Parent.Key.Visible = false
+			script.Parent.Parent.Parent.Successful.Visible = true
+			wait(2)
+			script.Parent.Parent.Parent.Successful.Visible = false
+			script.Parent.Parent.Parent.Transition2.Visible = true
+			script.Parent.Parent.Parent.Transition2:TweenSize(script.Parent.Parent.Parent.Loading.Size, "Out", "Linear", 0.5, false)
+			wait(1)
+			script.Parent.Parent.Parent.Loading.Visible = true
+			wait(0.1)
+			script.Parent.Parent.Parent.Transition2.Visible = false
+			wait(0.5)
+			script.Parent.Parent.Parent.Loading.TextLabel.Text = "Loading"
+			wait(0.8)
+			script.Parent.Parent.Parent.Loading.TextLabel.Text = "Loading."
+			wait(0.8)
+			script.Parent.Parent.Parent.Loading.TextLabel.Text = "Loading.."
+			wait(0.8)
+			script.Parent.Parent.Parent.Loading.TextLabel.Text = "Loading..."
+			wait(1.2)
+			script.Parent.Parent.Parent.Loading.TextLabel.Text = "Loaded Successfully!"
+			wait(1)
+			script.Parent.Parent.Parent.Loading.TextLabel.Visible = false
+			script.Parent.Parent.Parent.Loading:TweenSize(UDim2.new(0, 0,0, 0), "Out", "Linear", 0.5, false)
+			wait(0.9)
+			script.Parent.Parent.Parent.Loading.Visible = false
+			script.Parent.Parent.Parent.Successful.Visible = false
+			script.Parent.Parent.Parent.Transition3.Visible = true
+			script.Parent.Parent.Parent.Transition3:TweenSize(script.Parent.Parent.Parent.Panel.MainFrame.Size, "Out", "Linear", 0.5, false)
+			wait(1)
+			script.Parent.Parent.Parent.Transition3.Visible = false
+			script.Parent.Parent.Parent.Panel.Visible = true
+		else
+			script.Parent.Text = "Password Or Username Is Incorrect!"
+			script.Disabled = true
+			wait(2)
+			script.Disabled = false
+			script.Parent.Text = "Login"
+		end
+	end)
+end
+coroutine.wrap(NLVGGL_fake_script)()
+local function PMVDF_fake_script() -- TheGUI.Script 
+	local script = Instance.new('Script', TheGUI)
+
+	local L_1_ = Instance.new("BindableFunction")
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "Hyroxide";
+		Text = "Hyroxide Loaded!";
+		Duration = 5;
+		Callback = L_1_
+	})
+end
+coroutine.wrap(PMVDF_fake_script)()
+local function KRANHO_fake_script() -- TheGUI.Drags 
+	local script = Instance.new('Script', TheGUI)
+
+	local frame = script.Parent.Panel
+	
+	frame.Draggable = true
+	frame.Selectable = true
+	frame.Active = true
+end
+coroutine.wrap(KRANHO_fake_script)()
+local function TZZQK_fake_script() -- OpenMenu.Script 
+	local script = Instance.new('Script', OpenMenu)
+
+	local Popup = script.Parent.Parent.MainFrame
+	local Open = script.Parent
+	local tweenService = game:GetService("TweenService")
+	local openIs = false
+	
+	Open.MouseButton1Click:Connect(function()
+		if openIs == false then
+			script.Parent.Parent.MainFrame.Menus.Visible = false
+			script.Parent.Parent.MainFrame.Main2.Visible = false
+			script.Parent.Parent.MainFrame.Misc.Visible = false
+			script.Parent.Parent.MainFrame.Teleports.Visible = false
+			script.Parent.Parent.MainFrame.Credits.Visible = false
+			wait(0.01)
+			Popup:TweenSize(UDim2.new(0, 473,0, 0), "Out", "Linear", 0.3, false)
+			wait(2)
+			openIs = true
+		elseif openIs == true then
+			Popup:TweenSize(UDim2.new(0, 473,0, 370), "Out", "Bounce", 1.5, false)
+			wait(1.1)
+			script.Parent.Parent.MainFrame.Menus.Visible = true
+			script.Parent.Parent.MainFrame.Main2.Visible = true
+			script.Parent.Parent.MainFrame.Misc.Visible = true
+			script.Parent.Parent.MainFrame.Teleports.Visible = true
+			script.Parent.Parent.MainFrame.Credits.Visible = true
+			wait(0.8)
+			openIs = false
+		end
+	end)
+end
+coroutine.wrap(TZZQK_fake_script)()
+local function BQMFS_fake_script() -- Main.Script 
+	local script = Instance.new('Script', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Main2.Visible = true
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Parent.Parent.CurrentMenu.UIGradient.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Main"
+	end)
+end
+coroutine.wrap(BQMFS_fake_script)()
+local function RTKA_fake_script() -- Misc.Script 
+	local script = Instance.new('Script', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Misc.Visible = true
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Parent.Parent.CurrentMenu.UIGradient.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Misc"
+	end)
+end
+coroutine.wrap(RTKA_fake_script)()
+local function CXUSF_fake_script() -- Teleports.Script 
+	local script = Instance.new('Script', Teleports)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Teleports.Visible = true
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.Credits.Visible = false
+		script.Parent.Parent.Parent.Parent.CurrentMenu.UIGradient.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Teleports"
+	end)
+end
+coroutine.wrap(CXUSF_fake_script)()
+local function QBAGQX_fake_script() -- Credits.Script 
+	local script = Instance.new('Script', Credits)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Credits.Visible = true
+		script.Parent.Parent.Parent.Teleports.Visible = false
+		script.Parent.Parent.Parent.Main2.Visible = false
+		script.Parent.Parent.Parent.Misc.Visible = false
+		script.Parent.Parent.Parent.Parent.CurrentMenu.UIGradient.Enabled = true
+		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Credits"
+	end)
+end
+coroutine.wrap(QBAGQX_fake_script)()
+local function JMKBRBS_fake_script() -- ClickForSword.Script 
+	local script = Instance.new('Script', ClickForSword)
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local sword = script.Parent.Parent.Parent.EquipSword.ClassicSword:Clone()
+		sword = plr.Backpack
+	end)
+end
+coroutine.wrap(JMKBRBS_fake_script)()
+local function WXESU_fake_script() -- SpectatePlayer.Script 
+	local script = Instance.new('Script', SpectatePlayer)
+
+	local plr = game.Players.LocalPlayer
+	local plrs = game.Players
+	local tweenService = game:GetService("TweenService")
+	local Spectating = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.PlrName.Text == "PlrName" then
+			script.Parent.Parent.PlrName.Text = "Type In A Player's Username!"
+			wait(1)
+			script.Parent.Parent.PlrName.Text = "PlrName"
+		else
+			game.Workspace.Camera.CameraSubject = plrs:FindFirstChild(script.Parent.Parent.PlrName.Text).Character.Humanoid
+			Spectating = true
+	
+			while Spectating == true do
+				wait()
+				game.Workspace.Camera.CameraSubject = plrs:FindFirstChild(script.Parent.Parent.PlrName.Text).Character.Humanoid
+				wait()
+			end
+			wait()
+		end
+		script.Parent.Parent.StopSpectate.MouseButton1Click:Connect(function()
+			game.Workspace.Camera.CameraSubject = plr.Character:WaitForChild("Humanoid")
+			Spectating = false
+		end)
+	end)
+end
+coroutine.wrap(WXESU_fake_script)()
+local function ROKK_fake_script() -- TpToPlayer.Script 
+	local script = Instance.new('Script', TpToPlayer)
+
+	local plr = game.Players.LocalPlayer
+	local plrs = game.Players
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.PlrName.Text == "PlrName" then
+			script.Parent.Parent.PlrName.Text = "Type In A Player's Username!"
+			script.Disabled = true
+			wait(1)
+			script.Disabled = false
+			script.Parent.Parent.PlrName.Text = "PlrName"
+		else
+			plr.Character:WaitForChild("HumanoidRootPart").CFrame = plrs:FindFirstChild(script.Parent.Parent.PlrName.Text).Character.HumanoidRootPart.CFrame
+		end
+	end)
+end
+coroutine.wrap(ROKK_fake_script)()
+local function FGMA_fake_script() -- BringPlayer.Script 
+	local script = Instance.new('Script', BringPlayer)
+
+	local plr = game.Players.LocalPlayer
+	local plrs = game.Players
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.PlrName.Text == "PlrName" then
+			script.Parent.Parent.PlrName.Text = "Type In A Player's Username!"
+			script.Disabled = true
+			wait(1)
+			script.Disabled = false
+			script.Parent.Parent.PlrName.Text = "PlrName"
+		else
+			plrs:FindFirstChild(script.Parent.Parent.PlrName.Text).Character.HumanoidRootPart.CFrame = plr.Character:WaitForChild("HumanoidRootPart").CFrame
+		end
+	end)
+end
+coroutine.wrap(FGMA_fake_script)()
+local function HKGXXM_fake_script() -- KickPlayer.Script 
+	local script = Instance.new('Script', KickPlayer)
+
+	local plr = game.Players.LocalPlayer
+	local plrs = game.Players
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.PlrName.Text == "PlrName" then
+			script.Parent.Parent.PlrName.Text = "Type In A Player's Username!"
+			script.Disabled = true
+			wait(1)
+			script.Disabled = false
+			script.Parent.Parent.PlrName.Text = "PlrName"
+		else
+			plrs:FindFirstChild(script.Parent.Parent.PlrName.Text):Kick("LOL Get Kicked By "..plr.Name)
+		end
+	end)
+end
+coroutine.wrap(HKGXXM_fake_script)()
+local function FVEBNRE_fake_script() -- Next.open 
+	local script = Instance.new('Script', Next)
+
+	local Dialog = script.Parent.Parent.Parent.Dialog
+	local Popup = script.Parent.Parent.Parent.OpenAnim
+	tweenService = game:GetService("TweenService")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		Dialog.Visible = false
+		Popup.Visible = true
+		Popup:TweenSize(UDim2.new(0, 325,0, 325), "Out", "Bounce", 1, false)
+		wait(1)
+		Popup.Visible = false
+		script.Parent.Parent.Parent.Key.Visible = true
+	end)
+end
+coroutine.wrap(FVEBNRE_fake_script)()
+local function QBPB_fake_script() -- TheGUI.DialogScript 
+	local script = Instance.new('Script', TheGUI)
+
+	local Dialog = script.Parent.Dialog
+	
+	Dialog.Visible = true
+	
+	wait(1)
+	
+	local text = script.Parent.Dialog.TextLabel
+	
+	wait(1)
+	
+	local function typewrite(object,text,length)
+		for i = 1,#text,1 do
+			object.Text = string.sub(text,1,i)
+			wait(length)
+		end
+	end
+	
+	typewrite(text,"Hello Thank You For Using Hydroxide!",0.08)
+	script.Click:Play()
+	wait(1.2)
+	script.Click:Stop()
+	script.Parent.Dialog.Continue.Visible = true
+	
+	script.Parent.Dialog.Continue.MouseButton1Click:Connect(function()
+		script.Parent.Dialog.Continue.Visible = false
+		typewrite(text,"I Hope You Enjoy!",0.06)
+		script.Click:Play()
+		wait(2)
+		script.Click:Stop()
+		script.Parent.Dialog.Next.Visible = true
+		script.Parent.Panel.CurrentMenu.UIGradient.Enabled = false
+	end)
+	
+end
+coroutine.wrap(QBPB_fake_script)()
