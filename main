@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local TheGUI = Instance.new("ScreenGui")
 local Key = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -104,6 +99,7 @@ Login.Size = UDim2.new(0, 180, 0, 45)
 Login.Font = Enum.Font.GothamMedium
 Login.Text = "Login"
 Login.TextColor3 = Color3.fromRGB(255, 255, 255)
+Login.TextScaled = true
 Login.TextSize = 24.000
 Login.TextWrapped = true
 
@@ -559,7 +555,7 @@ Continue.TextSize = 32.000
 
 -- Scripts:
 
-local function NLVGGL_fake_script() -- Login.Script 
+local function DZUQU_fake_script() -- Login.Script 
 	local script = Instance.new('Script', Login)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -604,8 +600,8 @@ local function NLVGGL_fake_script() -- Login.Script
 		end
 	end)
 end
-coroutine.wrap(NLVGGL_fake_script)()
-local function PMVDF_fake_script() -- TheGUI.Script 
+coroutine.wrap(DZUQU_fake_script)()
+local function NUPW_fake_script() -- TheGUI.Script 
 	local script = Instance.new('Script', TheGUI)
 
 	local L_1_ = Instance.new("BindableFunction")
@@ -616,8 +612,8 @@ local function PMVDF_fake_script() -- TheGUI.Script
 		Callback = L_1_
 	})
 end
-coroutine.wrap(PMVDF_fake_script)()
-local function KRANHO_fake_script() -- TheGUI.Drags 
+coroutine.wrap(NUPW_fake_script)()
+local function NRWG_fake_script() -- TheGUI.Drags 
 	local script = Instance.new('Script', TheGUI)
 
 	local frame = script.Parent.Panel
@@ -626,8 +622,8 @@ local function KRANHO_fake_script() -- TheGUI.Drags
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(KRANHO_fake_script)()
-local function TZZQK_fake_script() -- OpenMenu.Script 
+coroutine.wrap(NRWG_fake_script)()
+local function FQNRSZ_fake_script() -- OpenMenu.Script 
 	local script = Instance.new('Script', OpenMenu)
 
 	local Popup = script.Parent.Parent.MainFrame
@@ -659,8 +655,8 @@ local function TZZQK_fake_script() -- OpenMenu.Script
 		end
 	end)
 end
-coroutine.wrap(TZZQK_fake_script)()
-local function BQMFS_fake_script() -- Main.Script 
+coroutine.wrap(FQNRSZ_fake_script)()
+local function ZTUAU_fake_script() -- Main.Script 
 	local script = Instance.new('Script', Main)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -672,8 +668,8 @@ local function BQMFS_fake_script() -- Main.Script
 		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Main"
 	end)
 end
-coroutine.wrap(BQMFS_fake_script)()
-local function RTKA_fake_script() -- Misc.Script 
+coroutine.wrap(ZTUAU_fake_script)()
+local function QWQGJUU_fake_script() -- Misc.Script 
 	local script = Instance.new('Script', Misc)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -685,8 +681,8 @@ local function RTKA_fake_script() -- Misc.Script
 		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Misc"
 	end)
 end
-coroutine.wrap(RTKA_fake_script)()
-local function CXUSF_fake_script() -- Teleports.Script 
+coroutine.wrap(QWQGJUU_fake_script)()
+local function MCAPEUK_fake_script() -- Teleports.Script 
 	local script = Instance.new('Script', Teleports)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -698,8 +694,8 @@ local function CXUSF_fake_script() -- Teleports.Script
 		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Teleports"
 	end)
 end
-coroutine.wrap(CXUSF_fake_script)()
-local function QBAGQX_fake_script() -- Credits.Script 
+coroutine.wrap(MCAPEUK_fake_script)()
+local function RLXACVG_fake_script() -- Credits.Script 
 	local script = Instance.new('Script', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -711,8 +707,8 @@ local function QBAGQX_fake_script() -- Credits.Script
 		script.Parent.Parent.Parent.Parent.Parent.Panel.CurrentMenu.Text = "Credits"
 	end)
 end
-coroutine.wrap(QBAGQX_fake_script)()
-local function JMKBRBS_fake_script() -- ClickForSword.Script 
+coroutine.wrap(RLXACVG_fake_script)()
+local function AVOIQ_fake_script() -- ClickForSword.Script 
 	local script = Instance.new('Script', ClickForSword)
 
 	local plr = game.Players.LocalPlayer
@@ -722,8 +718,8 @@ local function JMKBRBS_fake_script() -- ClickForSword.Script
 		sword = plr.Backpack
 	end)
 end
-coroutine.wrap(JMKBRBS_fake_script)()
-local function WXESU_fake_script() -- SpectatePlayer.Script 
+coroutine.wrap(AVOIQ_fake_script)()
+local function TQLE_fake_script() -- SpectatePlayer.Script 
 	local script = Instance.new('Script', SpectatePlayer)
 
 	local plr = game.Players.LocalPlayer
@@ -753,8 +749,8 @@ local function WXESU_fake_script() -- SpectatePlayer.Script
 		end)
 	end)
 end
-coroutine.wrap(WXESU_fake_script)()
-local function ROKK_fake_script() -- TpToPlayer.Script 
+coroutine.wrap(TQLE_fake_script)()
+local function RPDMQK_fake_script() -- TpToPlayer.Script 
 	local script = Instance.new('Script', TpToPlayer)
 
 	local plr = game.Players.LocalPlayer
@@ -772,8 +768,8 @@ local function ROKK_fake_script() -- TpToPlayer.Script
 		end
 	end)
 end
-coroutine.wrap(ROKK_fake_script)()
-local function FGMA_fake_script() -- BringPlayer.Script 
+coroutine.wrap(RPDMQK_fake_script)()
+local function QOYD_fake_script() -- BringPlayer.Script 
 	local script = Instance.new('Script', BringPlayer)
 
 	local plr = game.Players.LocalPlayer
@@ -791,8 +787,8 @@ local function FGMA_fake_script() -- BringPlayer.Script
 		end
 	end)
 end
-coroutine.wrap(FGMA_fake_script)()
-local function HKGXXM_fake_script() -- KickPlayer.Script 
+coroutine.wrap(QOYD_fake_script)()
+local function VRUBIOT_fake_script() -- KickPlayer.Script 
 	local script = Instance.new('Script', KickPlayer)
 
 	local plr = game.Players.LocalPlayer
@@ -810,8 +806,8 @@ local function HKGXXM_fake_script() -- KickPlayer.Script
 		end
 	end)
 end
-coroutine.wrap(HKGXXM_fake_script)()
-local function FVEBNRE_fake_script() -- Next.open 
+coroutine.wrap(VRUBIOT_fake_script)()
+local function LTMAG_fake_script() -- Next.open 
 	local script = Instance.new('Script', Next)
 
 	local Dialog = script.Parent.Parent.Parent.Dialog
@@ -827,8 +823,8 @@ local function FVEBNRE_fake_script() -- Next.open
 		script.Parent.Parent.Parent.Key.Visible = true
 	end)
 end
-coroutine.wrap(FVEBNRE_fake_script)()
-local function QBPB_fake_script() -- TheGUI.DialogScript 
+coroutine.wrap(LTMAG_fake_script)()
+local function DUZLOPN_fake_script() -- TheGUI.DialogScript 
 	local script = Instance.new('Script', TheGUI)
 
 	local Dialog = script.Parent.Dialog
@@ -849,16 +845,20 @@ local function QBPB_fake_script() -- TheGUI.DialogScript
 	end
 	
 	typewrite(text,"Hello Thank You For Using Hydroxide!",0.08)
+	script.Click:Play()
 	wait(1.2)
+	script.Click:Stop()
 	script.Parent.Dialog.Continue.Visible = true
 	
 	script.Parent.Dialog.Continue.MouseButton1Click:Connect(function()
 		script.Parent.Dialog.Continue.Visible = false
 		typewrite(text,"I Hope You Enjoy!",0.06)
+		script.Click:Play()
 		wait(2)
+		script.Click:Stop()
 		script.Parent.Dialog.Next.Visible = true
 		script.Parent.Panel.CurrentMenu.UIGradient.Enabled = false
 	end)
 	
 end
-coroutine.wrap(QBPB_fake_script)()
+coroutine.wrap(DUZLOPN_fake_script)()
