@@ -849,17 +849,13 @@ local function QBPB_fake_script() -- TheGUI.DialogScript
 	end
 	
 	typewrite(text,"Hello Thank You For Using Hydroxide!",0.08)
-	script.Click:Play()
 	wait(1.2)
-	script.Click:Stop()
 	script.Parent.Dialog.Continue.Visible = true
 	
 	script.Parent.Dialog.Continue.MouseButton1Click:Connect(function()
 		script.Parent.Dialog.Continue.Visible = false
 		typewrite(text,"I Hope You Enjoy!",0.06)
-		script.Click:Play()
 		wait(2)
-		script.Click:Stop()
 		script.Parent.Dialog.Next.Visible = true
 		script.Parent.Panel.CurrentMenu.UIGradient.Enabled = false
 	end)
